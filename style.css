@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+:root {
+  --very-dark-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--light-grayish-blue);
+}
+
+.container {
+  height: 98%;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card-container {
+  width: 800px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+}
+
+.container .card-container .left-colum {
+  width: 40%;
+}
+
+.container .card-container .left-colum img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .card-container .right-colum {
+  padding: 40px;
+  width: 60%;
+}
+
+.container .card-container .right-colum h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+.container .card-container .right-colum .description {
+  color: var(--grayish-blue);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.container .card-container .right-colum .info-container .btn {
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.container .card-container .right-colum .info-container .btn img {
+  width: 20px;
+}
+.container .card-container .right-colum .info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.container .card-container .right-colum .info-container .name-container .name {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+.container .card-container .right-colum .info-container .name-container .date {
+  color: var(--desaturated-dark-blue);
+}
+.container .card-container .right-colum .info-container img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.container .card-container .right-colum .info-container .name-container {
+  margin-left: -170px;
+}
